@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com DOM</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome">
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        //--> FORMAS DE BUSCAR ELEMENTOSS
+
+        //var inputElement = document.getElementById('nome');
+        //var inputElement2 = document.getElementsByTagName('input')[0];
+        //var inputElement3 = document.getElementsByClassName('nome')[0];
+
+        var inputElement4 = document.querySelector('input[name=nome]') //div#app input
+        
+        var btnElement = document.querySelector('button.botao');
+        //console.log(inputElement);
+        //console.log(inputElement2);
+        //console.log(inputElement3);
+
+        console.log(inputElement4);
+
+        btnElement.onclick = function() {
+            var text = inputElement4.value;
+            alert(text);
+        }
+    </script>
+</body>
+</html>

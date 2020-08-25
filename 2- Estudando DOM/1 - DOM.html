@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <button onclick="mostraAlerta()">Me pressione</button>
+        <button onmouseover="Alerta()">Passe o mouse</button>
+        <input type="text" onkeypress="keyboard()">
+    </div>
+
+    <script>
+        function mostraAlerta(){
+            alert("Botão foi cliclado");
+        }
+
+        function Alerta(){
+            alert("O mouse passou no botão");
+        }
+
+        function keyboard(){
+            alert("Digitou");
+        }
+    </script>
+</body>
+</html>

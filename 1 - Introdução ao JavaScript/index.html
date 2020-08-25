@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //Introdução ao Javascript
+
+        //--> VARIÁVEIS E DADOS
+        var nome = "Guilherme";
+        var idade = 18;
+        var peso = 88.5;
+        var humano = true;
+
+        var alunos = ['Guilherme','Diego','Lucas'];
+
+        var aluno = {
+            nome: alunos[0],
+            idade: 23,
+            peso: 88.5,
+            humano: true        
+        };
+
+        //console.log(alunos[0]);
+        //console.log(aluno.peso)
+
+        //--> OPERAÇÕES MATEMÁTICAS
+        var x = 10, y = 5;
+
+        x *= y;
+        x /= y;
+        x %= y;
+        x -= y;
+        //console.log(x);
+
+        //--> FUNÇÕES
+        function soma(num1, num2){
+            var resultado = num1 + num2;
+
+            return resultado;
+        }
+
+        var resultado = soma(1, 2);
+        //console.log(resultado);
+
+        //--> CONDICIONAIS
+        function retornaSexo(sexo){
+             //M, F
+            //Masculino, Feminino
+            //COM IF
+
+            //if(sexo === 'M'){
+            //return 'Masculino';
+            //} else if(sexo === 'F'){
+              //  return 'Feminino';
+            //} else {
+            //    return 'Outro';
+            //}
+
+            //COM SWITCH
+
+            switch(sexo){
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
+        }
+
+        var sexo  = retornaSexo("M");
+        //console.log(sexo);
+
+        //--> OPERADORES LÓGICOS
+
+        //AND, OR, NOT
+        //var sexo = 'M', idade = 23;
+
+        //if(sexo === 'M' || idade >= 18){
+          //  console.log("Ok")
+        //}
+        
+        //var sexo = 'F';
+
+        //if(sexo != 'M'){
+        //    console.log('OK');
+        //}
+
+        //var sexo = 'M';
+
+        //var masculino = (sexo === 'M');
+
+        //if(sexo === 'M'){
+        //    masculino  = true;
+        //} else{
+        //    masculino = false;
+        //}
+        
+        //console.log(masculino)
+
+        //--> CONDIÇÃO TERNÁRIA
+        var sexo2 = 'M';
+
+        var retorno = (sexo2 === 'M') ? 'Masculino' : 'Feminino';
+
+        //console.log(retorno);
+
+        //--> ESTRUTURA DE REPETIÇÃO
+        
+        //for, while
+
+        //for(var i = 0; i <= 100; i++){
+        //    console.log(i);
+        //}
+
+        var j = 2235253;
+        //while(j > 50){
+        //    console.log(j);
+        //    
+        //    j /= 5;
+        //}
+
+
+        //--> INTERVALO E TIMEOUT
+
+        function exibirAlgo(){
+            console.log("Hello Word");
+        }
+
+        //setInterval(exibirAlgo, 1000); -->Executa a função várias vezes a cada segundo.
+    
+        setTimeout(exibirAlgo, 5000); //--> Executa a função apenas uma vez após 5s.
+    </script>
+</body>
+</html>
